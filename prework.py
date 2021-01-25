@@ -39,9 +39,5 @@ def is_leap_year(a_year):
         print('Not a Leap Year')
 
 #5
-def is_consecutive(a_list):
-    sorted_list = sorted(a_list)
-    if a_list == sorted_list:
-        print(True)
-    else:
-        print(False)
+def checkConsecutive(l): 
+    return sorted(l) == list(range(min(l), max(l)+1)) 
